@@ -47,19 +47,29 @@ export const editTextMap = {
 
 /** @type {Readonly<Record<Locale, { text: string; copyright?: string }>>} */
 export const footerTextMap = {
-  ja: {
-    text: "提供",
-    copyright: `著作権 © ${new Date().getFullYear()} ${
-      _config.author.name
-    }.
-    Nextraで構築されています。`,
-  },
   "en-US": {
     text: "Powered by",
     copyright: `Copyright © ${new Date().getFullYear()} ${
       _config.author.name
-    }.
-  Built with Nextra.`,
+    } (owned by Kilian Balaguer).`,
+  },
+  "nl-NL": {
+    text: "Powered by",
+    copyright: `Copyright © ${new Date().getFullYear()} ${
+      _config.author.name
+    } (eigendom van Kilian Balaguer).`,
+  },
+  "de-DE": {
+    text: "Powered by",
+    copyright: `Copyright © ${new Date().getFullYear()} ${
+      _config.author.name
+    } (im Besitz von Kilian Balaguer).`,
+  },
+  "fr-FR": {
+    text: "Powered by",
+    copyright: `Copyright © ${new Date().getFullYear()} ${
+      _config.author.name
+    } (propriété de Kilian Balaguer).`,
   },
 };
 
