@@ -44,7 +44,7 @@ const themeConfig = {
     const title = useLocalesMap(titleMap);
     return (
       <>
-        <Logo height={30} />
+        <Logo height={60} />
         <span
           className="mx-2 font-extrabold italic hidden md:inline select-none"
           title={`${_config.title}: ${title}`}
@@ -59,20 +59,20 @@ const themeConfig = {
     const { frontMatter, title } = useConfig();
     const titleSuffix = useLocalesMap(titleMap);
     const description = useLocalesMap(headDescriptionMap);
-
-    const imageUrl = new URL(_config.origin);
-
+  
+    let imageUrl = "./public/assets/banner.png";
+  
     if (!/\/index\.+/.test(route)) {
-      imageUrl.searchParams.set("title", title || titleSuffix);
+      imageUrl = `${imageUrl}?title=${encodeURIComponent(title || titleSuffix)}`;
     }
-
+  
     const contentLanguage = locales.join(", ");
     const ogTitle = title
       ? `${title} – ${_config.title}`
       : `${_config.title}: ${titleSuffix}`;
     const ogDescription = frontMatter.description || description;
-    const ogImage = frontMatter.image || imageUrl.toString();
-
+    const ogImage = frontMatter.image || imageUrl;
+    
     return (
       <>
         {/* Favicons, meta */}
