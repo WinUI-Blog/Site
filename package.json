@@ -1,5 +1,5 @@
 {
-  "name": "zshmgr-docs",
+  "name": "winuiblog-docs",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -9,7 +9,6 @@
     "postbuild": "next-sitemap --config next-sitemap.config.js",
     "lint": "next lint"
   },
-  "author": "Fun117 <fun117.kun@gmail.com> (https://fun117.dev)",
   "repository": {
     "type": "git",
     "url": "git+ssh://git@github.com/Fun117/zshmgr.git"
