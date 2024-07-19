@@ -93,13 +93,6 @@ const themeConfig = {
           sizes="16x16"
           href="/favicon/favicon-16x16.png"
         />
-        <link rel="icon" type="image/svg+xml" href="/favicon/favicon.svg" />
-        <link rel="manifest" href="/favicon/site.webmanifest" />
-        <link
-          rel="mask-icon"
-          href="/favicon/safari-pinned-tab.svg"
-          color="#000000"
-        />
         <meta httpEquiv="Content-Language" content={contentLanguage} />
         <meta name="msapplication-TileColor" content="#ffffff" />
         <meta name="apple-mobile-web-app-title" content={_config.title} />
