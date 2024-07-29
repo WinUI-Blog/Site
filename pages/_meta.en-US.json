@@ -2,11 +2,30 @@
   "index": {
     "title": "Home",
     "type": "page",
-    "display": "hidden"
+    "display": "hidden",
+    "theme": {
+      "layout": "full"
+    }
   },
   "docs": {
     "title": "Docs",
     "type": "page"
+  },
+  "downloads": {
+    "title": "Downloads",
+    "type": "page",
+    "theme": {
+      "typesetting": "article",
+      "layout": "full"
+    }
+  },
+  "templates": {
+    "type": "page",
+    "title": "Templates",
+    "theme": {
+      "typesetting": "article",
+      "layout": "full"
+    }
   },
   "about": {
     "title": "About",
@@ -14,5 +33,12 @@
     "theme": {
       "typesetting": "article"
     }
+  },
+  "404": {
+      "type": "page",
+      "theme": {
+        "timestamp": false,
+        "typesetting": "article"
+      }
+    }
   }
-}

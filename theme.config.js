@@ -12,6 +12,7 @@ import {
   languageMap,
   searchPlaceholderMap,
   tableOfContentsTitleMap,
+  Banner,
   titleMap,
 } from "./translations/text";
 import { _config } from "./_config";
@@ -28,11 +29,28 @@ const themeConfig = {
     };
   },
   toc: {
+    backToTop: true,
     float: true,
     title: () => useLocalesMap(tableOfContentsTitleMap),
   },
+  chat: {
+    link: 'https://',
+  },
+  banner: {
+    dismissible: false,
+    key: 'Beta',
+    text: (
+      <a href="#" target="_blank">
+      🐛 WinUI Blog is still in BETA you may expect bugs! Read more →
+      </a>
+    ),
+  },
   search: {
     placeholder: () => useLocalesMap(searchPlaceholderMap),
+  },
+  sidebar: {
+    defaultMenuCollapseLevel: 1, // Collapsed by default at level 1 (top-level folders only)
+    toggleButton: true // Automatically collapse folders that do not contain an active/focused route
   },
   editLink: {
     text: () => useLocalesMap(editTextMap),
@@ -40,6 +58,8 @@ const themeConfig = {
   feedback: {
     content: () => useLocalesMap(feedbackLinkMap),
   },
+  primaryHue: { dark: 10, light: 10 },
+  primarySaturation: { dark: 100, light: 100 },
   logo: () => {
     const title = useLocalesMap(titleMap);
     return (

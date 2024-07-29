@@ -1,0 +1,10 @@
+# *
+User-agent: *
+Allow: /
+Disallow: /api
+
+# Host
+Host: https://winuiblog.vercel.app/
+
+# Sitemaps
+Sitemap: https://winuiblog.vercel.app/sitemap.xml

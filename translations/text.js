@@ -15,16 +15,16 @@ export const languageMap = {
 
 /** @type {Readonly<Record<Locale, string>>} */
 export const titleMap = {
-  "en-US": "Simple package manager for Zsh.",
-  "nl-NL": "Nederlands",
+  "en-US": "Learn and master WinUI 3.",
+  "nl-NL": "Leer en master WinUI 3",
   "de-DE": "Deutsch",
   "fr-FR": "Français",
 };
 
 /** @type {Readonly<Record<Locale, string>>} */
 export const headDescriptionMap = {
-  "en-US": "Zshmgr is a simple package manager for Zsh. It allows users to easily install, uninstall, update, and list packages. The tool is designed to work seamlessly with GitHub repositories, making it easy to manage your Zsh scripts and tools.",
-  "nl-NL": "Nederlands",
+  "en-US": "WinUI Blog helps you learn and master WinUI 3 with a modern docs with samples and templates.",
+  "nl-NL": "WinUI Blog helpt you met het leeren and mastere van het programmeer taal WinUI 3 met een moderne docs met samples and templates.",
   "de-DE": "Deutsch",
   "fr-FR": "Français",
 };
@@ -32,7 +32,7 @@ export const headDescriptionMap = {
 /** @type {Readonly<Record<Locale, string>>} */
 export const feedbackLinkMap = {
   "en-US": "Question? Give us feedback →",
-  "nl-NL": "Nederlands",
+  "nl-NL": "Vraag? Geef ons feedback →",
   "de-DE": "Deutsch",
   "fr-FR": "Français",
 };
@@ -40,10 +40,18 @@ export const feedbackLinkMap = {
 /** @type {Readonly<Record<Locale, string>>} */
 export const editTextMap = {
   "en-US": "Edit this page on GitHub →",
-  "nl-NL": "Nederlands",
+  "nl-NL": "Bewerk deze pagina op github →",
   "de-DE": "Deutsch",
   "fr-FR": "Français",
 };
+
+//@type {Readonly<Record<Locale, string>>} */
+//export const Banner = {
+//"en-US": "🐛 WinUI Blog is still in BETA you may expect bugs! Read more →",
+//"nl-NL": "",
+//"de-DE": "Deutsch",
+//"fr-FR": "Français",
+//};
 
 /** @type {Readonly<Record<Locale, { text: string; copyright?: string }>>} */
 export const footerTextMap = {
@@ -76,7 +84,7 @@ export const footerTextMap = {
 /** @type {Readonly<Record<Locale, string>>} */
 export const tableOfContentsTitleMap = {
   "en-US": "On This Page",
-  "nl-NL": "Nederlands",
+  "nl-NL": "Op deze pagina",
   "de-DE": "Deutsch",
   "fr-FR": "Français",
 };
@@ -84,7 +92,7 @@ export const tableOfContentsTitleMap = {
 /** @type {Readonly<Record<Locale, string>>} */
 export const searchPlaceholderMap = {
   "en-US": "Search documentation...",
-  "nl-NL": "Nederlands",
+  "nl-NL": "Zoek documentatie...",
   "de-DE": "Deutsch",
   "fr-FR": "Français",
 };
@@ -92,7 +100,7 @@ export const searchPlaceholderMap = {
 /** @type {Readonly<Record<Locale, string>>} */
 export const gitTimestampMap = {
   "en-US": "Last updated on",
-  "nl-NL": "Nederlands",
+  "nl-NL": "laats geupdate op",
   "de-DE": "Deutsch",
   "fr-FR": "Français",
 };

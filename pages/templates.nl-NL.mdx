@@ -1,0 +1,42 @@
+---
+title: Templates
+---
+
+import { Cards } from 'nextra/components'
+
+{<h1 className="mt-10 mb-4 text-center text-[2.5rem] font-bold tracking-tight">Templates</h1>}
+
+{<p className="mb-16 text-center text-lg text-gray-500 dark:text-gray-400">Open
+source templates by WinUI Blog</p>}
+
+<Cards>
+  <ShowcaseCard title="Template 1" href="">
+    <>![The Graph preview](./templates/thegraph.jpeg)</>
+  </ShowcaseCard>
+    <ShowcaseCard title="Template 2" href="">
+    <>![The Graph preview](./templates/thegraph.jpeg)</>
+  </ShowcaseCard>
+    <ShowcaseCard title="Template 3" href="">
+    <>![The Graph preview](./templates/thegraph.jpeg)</>
+  </ShowcaseCard>
+</Cards>
+
+export const ShowcaseCard = Object.assign(
+  // Copy card component and add default props
+  Cards.Card.bind(),
+  {
+    displayName: 'ShowcaseCard',
+    defaultProps: {
+      image: true,
+      arrow: true,
+      target: '_blank'
+    }
+  }
+)
+
+<style global jsx>{`
+  img {
+    aspect-ratio: 12/6.3;
+    object-fit: cover;
+  }
+`}</style>

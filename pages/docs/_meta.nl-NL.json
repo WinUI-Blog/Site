@@ -1,3 +1,17 @@
 {
-  "introduction": "Introductie"
+  "introduction": "Introduction",
+  "-- design-guidance": {
+    "type": "separator",
+    "title": "Design guidance"
+  },
+  "color": "Color",
+  "geometry": "Geometry",
+  "iconography": "Iconography",
+  "spacing": "Spacing",
+  "typography": "Typography",
+  "accessibility": "Accessibility",
+  "-- all-samples": {
+    "type": "separator",
+    "title": "All samples"
+  }
 }
